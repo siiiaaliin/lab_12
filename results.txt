@@ -1,0 +1,20 @@
+num=Rational(1, 0)
+print(num())
+
+Результат виконання:
+RationalError: Знаменник дорівнює нулю
+
+
+num=Rational(1, 2)
+result=num+"xyz"   
+print(result)
+
+Результат виконання:
+RationalValueError: Спроба додати нераціональне значення
+
+
+rlist=RationalList()
+rlist.append(3.14)
+
+Результат виконання:
+RationalValueError: Спроба додати до списку некоректне значення
