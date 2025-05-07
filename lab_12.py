@@ -16,7 +16,7 @@ class RationalValueError(ValueError):
         self._message=message
 
     def __str__(self):
-        return "RationalValueError: " + str(self._message)
+        return str(self._message)
     
 class Rational:
     def __init__(self, n, d=None):
@@ -212,7 +212,10 @@ class RationalList:
 # num=Rational(1, 0)
 # print(num())
 
-num=Rational(1, 2)
-result=num+"xyz"   
-print(result)
+# num=Rational(1, 2)
+# result=num+"xyz"   
+# print(result)
+
+rlist=RationalList()
+rlist.append(3.14)
 
